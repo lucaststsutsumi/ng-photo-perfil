@@ -1,18 +1,19 @@
 # NgPhotoPerfil
 
-## Maintenance
+## :hammer_and_wrench: Maintenance :hammer_and_wrench:
 
-I'm sorry but I still don't have a functional mvp that can be used to play. I'm prioritizing the repair of this project,
-this anime-loving programmer thanks =).
+I'm sorry but I still don't have a functional mvp that can be used to play. I'm prioritizing the repair of this project :muscle:,
+this anime-loving programmer thanks :nerd_face:.
 
-## Description
+:wrench: :wrench: :wrench: :wrench: :wrench: :wrench:
+## Description :memo:
 
 An angular application created to replicate a "photo-profile" game, a game created by the animazon group to be one of
 the attractions of the event.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
-## Motivation and Inspiration
+## Motivation and Inspiration :sparkling_heart:
 
 I, the author of this project, am a member of the animazon group, a cultural, non-profit group whose main objective is
 to disseminate through entertainment the Japanese culture in the State of Pará-Brazil, for more information click here.
@@ -25,7 +26,7 @@ homes, to play with your family in this time of covid.
 
 So... How does it work?
 
-## The game and its rules
+## :video_game: The game and its rules :book:
 
 ### Format:
 
@@ -45,7 +46,7 @@ queue in case of delay.
 
 Eg: 10+ open boards with no correct answer.
 
-## IMPORTANT NOTE:
+## :warning: IMPORTANT NOTE :warning: 
 
 It is worth mentioning that this project is not the one previously described, this is merely a prototype of a game
 performed at the event. It has 4 main purposes:
@@ -57,7 +58,7 @@ performed at the event. It has 4 main purposes:
 - In the future be used as an example, together with other projects, of my proposal to create a technology area that
   helps all internal / external activities.
 
-- Be the first step towards my world conquest, HAHAHAHAHA =).
+- Be the first step towards my world conquest, HAHAHAHAHA :smiling_imp:.
 
 ## Setup and Commands to run
 ### For final Users
@@ -93,9 +94,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out
 the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Technologies
+## Technologies :computer:
 ... working in progress
 
 ---
-Make with love :smile: :yellow_heart: .
+Make with love :wave: :smile: :yellow_heart: .
 By Lucas Toshiaki Silva Tsutsumi.
