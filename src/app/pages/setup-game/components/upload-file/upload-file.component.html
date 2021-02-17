@@ -1,0 +1,17 @@
+<form [formGroup]="uploadForm" (ngSubmit)="submit()">
+
+  <input type="file" accept="image/*" (change)="showPreview($event)" #inputFile />
+
+
+
+  <div class="imagePreview" *ngIf="imageURL && imageURL !== ''">
+    <div class="card text-center  border-danger  g-0">
+      <div class="card-header bg-danger text-white">
+        Preview
+      </div>
+      <div class="card-body">
+        <img [src]="imageURL">
+      </div>
+    </div>
+  </div>
+</form>

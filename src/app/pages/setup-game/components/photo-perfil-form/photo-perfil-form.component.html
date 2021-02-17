@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="row">
+    <input matInput formControlName="customName" class="full-width" type="originalFile">
+    <input matInput formControlName="customName" class="full-width" type="imageURL">
+
+    <div class="col-md-6">
+      <div class="row">
+        <mat-form-field>
+          <mat-label>Name of the Character</mat-label>
+          <input matInput placeholder="Dio" formControlName="customName" class="full-width">
+          <!--     <mat-error *ngIf="email.invalid">{{}}</mat-error>  -->
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field>
+          <mat-label>From anime</mat-label>
+          <input matInput placeholder="Dragon ball z" formControlName="fromAnime">
+          <!-- <mat-error *ngIf="email.invalid">{{}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field>
+          <mat-label>Enter with a description for the character</mat-label>
+          <textarea matInput placeholder="Goku, the main protagonist of the anime"
+            formControlName="characterDescription"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <button mat-raised-button color="primary" [disabled]="form.invalid" class="full-width">Save</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <app-upload-file (selectedFile)="readFile($event)"></app-upload-file>
+    </div>
+
+  </div>
+</form>
