@@ -1,19 +1,25 @@
-import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { PhotoPerfilService } from './services/photo-perfil.service';
 
 
 
 @NgModule({
-  declarations: [NavbarComponent],
+  declarations: [ToolbarComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [PhotoPerfilService],
-  exports: [NavbarComponent]
+  exports: [ ToolbarComponent]
 })
 export class CoreModule { }

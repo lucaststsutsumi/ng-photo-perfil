@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <img mat-card-image [src]="photo.imageURL" [alt]="photo.customName?photo.customName : photo.generatedName">
+  <mat-card-content>
+    <p> <span style="font-weight: bold;">Name:</span> {{photo.customName?photo.customName : photo.generatedName}}</p>
+    <p> <span style="font-weight: bold;">From:</span> {{photo.fromAnime}}</p>
+    <p> <span style="font-weight: bold;">Description:</span> {{photo.characterDescription}}</p>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">EDIT</button>
+    <button mat-raised-button color="warn" >DELETE</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,44 @@
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-toolbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.nav-toolbar-items-list {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-toolbar-items-list li {
+  margin-right: 10px;
+  padding-top: 15px;
+}
+
+.nav-toolbar-items-list li:hover {
+  cursor: pointer;
+}
+
+.nav-toolbar-items-list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-toolbar-items-list li a:hover {
+  color: #916dd1;
+}
+.active {
+  color: black;
+}

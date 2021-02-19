@@ -1,3 +1,4 @@
+import { AboutModule } from './pages/about/about.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +20,7 @@ import { SetupGameModule } from './pages/setup-game/setup-game.module';
 
     CoreModule,
     SetupGameModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

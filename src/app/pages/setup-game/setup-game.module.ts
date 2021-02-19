@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -8,13 +8,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 
+import { CardComponent } from './components/card/card.component';
 import { PhotoPerfilFormComponent } from './components/photo-perfil-form/photo-perfil-form.component';
 import { UploadFileComponent } from './components/upload-file/upload-file.component';
 import { SetupGameComponent } from './containers/setup-game/setup-game.component';
+import { PhotoCollectionComponent } from './components/photo-collection/photo-collection.component';
 
 
 @NgModule({
-  declarations: [SetupGameComponent, UploadFileComponent, PhotoPerfilFormComponent],
+  declarations: [SetupGameComponent, UploadFileComponent, PhotoPerfilFormComponent, CardComponent, PhotoCollectionComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -24,11 +26,14 @@ import { SetupGameComponent } from './containers/setup-game/setup-game.component
     MatFormFieldModule,
     MatInputModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
 
   ], exports: [
     UploadFileComponent,
-    PhotoPerfilFormComponent
+    PhotoPerfilFormComponent,
+    CardComponent
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
 export class SetupGameModule { }
