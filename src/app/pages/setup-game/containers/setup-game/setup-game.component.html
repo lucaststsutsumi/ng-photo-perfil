@@ -13,15 +13,15 @@
 
   <br>
 
-  <div *ngIf="(photoPerfilCollection$ | async)?.photoPerfilList ;else hasNoCollection">
-    <app-photo-collection [datasource]=" (photoPerfilCollection$|async)?.photoPerfilList"></app-photo-collection>
+  <div *ngIf="(photoPerfilCollection$ | async) as collection ;else hasNoCollection">
+    <app-photo-collection [datasource]="collection"></app-photo-collection>
   </div>
 
   <ng-template #hasNoCollection>
     <div class="d-flex flex-column align-items-center">
       <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_CGPHc4.json" background="transparent" speed="1"
         style="width: 150px; height: 150px;" hover autoplay></lottie-player>
-        <p class="text-main-color"> Empty collection</p>
+      <p class="text-main-color"> Empty collection</p>
     </div>
   </ng-template>
 </div>

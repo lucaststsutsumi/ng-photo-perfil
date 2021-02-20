@@ -1,4 +1,4 @@
-export const initDb= [
+export const photoCollectionDbTest= [
   {
     "customName": "Dio",
     "fromAnime": "JOJO",

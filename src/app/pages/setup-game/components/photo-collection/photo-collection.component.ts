@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
-import { PhotoPerfil } from './../../../../shared/models/photo-perfil.model';
-import { initDb } from './db/test';
+import { PhotoPerfilCollection } from './../../../../shared/models/photo-perfil-collection';
 
 @Component({
   selector: 'app-photo-collection',
@@ -10,12 +9,11 @@ import { initDb } from './db/test';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PhotoCollectionComponent implements OnInit {
-  @Input() datasource: PhotoPerfil[];
+  @Input() datasource: PhotoPerfilCollection;
   constructor() { }
 
   ngOnInit(): void {
 
-   // this.datasource = initDb;
   }
 
 }

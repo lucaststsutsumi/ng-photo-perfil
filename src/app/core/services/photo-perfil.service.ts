@@ -15,6 +15,10 @@ export class PhotoPerfilService {
   constructor() {
     this.photoPerfilCollection = new PhotoPerfilCollection();
     this.collection$ = new Subject<PhotoPerfilCollection>();
+
+    // for test
+    /* this.photoPerfilCollection.photoPerfilList = [...photoCollectionDbTest];
+    this.collection$.next(this.photoPerfilCollection); */
   }
 
   getPhotoPerfilCollection(): Observable<PhotoPerfilCollection> {

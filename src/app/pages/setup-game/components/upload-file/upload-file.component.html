@@ -1,8 +1,10 @@
 <form [formGroup]="uploadForm" (ngSubmit)="submit()">
 
-  <input class="form-control" mat-raised-button color="primary" type="file" accept="image/*" (change)="showPreview($event)" #inputFile />
+  <input class="form-control" type="file" accept="image/*" (change)="showPreview($event)" #inputFile />
 
-  <div class="imagePreview mt-3" *ngIf="imageURL && imageURL !== ''">
+
+
+  <div class="imagePreview" *ngIf="imageURL && imageURL !== ''">
     <div class="card text-center  border-danger  g-0">
       <div class="card-header bg-danger text-white">
         Preview

@@ -13,7 +13,6 @@ import { PhotoPerfil } from './../../../../shared/models/photo-perfil.model';
 export class SetupGameComponent implements OnInit {
 
   photoPerfilCollection$: Observable<PhotoPerfilCollection>;
-  displayedColumns: string[] = ['name', 'anime', 'image', 'operations'];
 
   constructor(private photoPerfilService: PhotoPerfilService) { }
 
