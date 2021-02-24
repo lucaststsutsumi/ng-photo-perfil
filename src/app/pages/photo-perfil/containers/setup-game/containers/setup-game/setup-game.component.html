@@ -14,7 +14,7 @@
   <br>
 
   <div *ngIf="(photoPerfilCollection$ | async) as collection ;else hasNoCollection">
-    <app-photo-collection [datasource]="collection"></app-photo-collection>
+    <app-photo-collection [datasource]="collection" (onDelete)="onDelete($event)"></app-photo-collection>
   </div>
 
   <ng-template #hasNoCollection>

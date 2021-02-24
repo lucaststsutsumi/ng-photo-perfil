@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { PhotoPerfil } from 'src/app/pages/photo-perfil/photo-perfil.model';
 
-import { PhotoPerfil } from './../../../../shared/models/photo-perfil.model';
 
 @Component({
   selector: 'app-card',
@@ -10,9 +10,13 @@ import { PhotoPerfil } from './../../../../shared/models/photo-perfil.model';
 })
 export class CardComponent implements OnInit {
   @Input() photo: PhotoPerfil;
+  @Output() onDelete = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  delete(id: number) {
+    this.onDelete.emit(id);
+  }
 }

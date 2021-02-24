@@ -13,7 +13,7 @@
       </div>
       <div class="row">
         <mat-form-field>
-          <mat-label>From anime</mat-label>
+          <mat-label>From anime/movie/serie</mat-label>
           <input matInput placeholder="Dragon ball z" formControlName="fromAnime">
           <!-- <mat-error *ngIf="email.invalid">{{}}</mat-error> -->
         </mat-form-field>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 mt-3">
       <app-upload-file (selectedFile)="readFile($event)"></app-upload-file>
     </div>
 

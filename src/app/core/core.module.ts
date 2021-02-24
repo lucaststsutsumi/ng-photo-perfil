@@ -1,12 +1,11 @@
-import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { PhotoPerfilService } from './services/photo-perfil.service';
 
 
 
@@ -19,7 +18,7 @@ import { PhotoPerfilService } from './services/photo-perfil.service';
     MatIconModule,
     MatButtonModule
   ],
-  providers: [PhotoPerfilService],
-  exports: [ ToolbarComponent]
+  providers: [],
+  exports: [ToolbarComponent]
 })
 export class CoreModule { }

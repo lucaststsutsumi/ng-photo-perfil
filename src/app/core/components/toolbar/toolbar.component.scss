@@ -13,6 +13,10 @@
   white-space: nowrap;
 }
 
+.nav-toolbar-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .nav-toolbar-items-list {
   display: flex;
   flex-direction: row;
@@ -39,6 +43,7 @@ ul {
 .nav-toolbar-items-list li a:hover {
   color: #916dd1;
 }
-.active {
-  color: black;
+
+.nav-toolbar-items-list li a:active {
+  color: #916dd1;
 }

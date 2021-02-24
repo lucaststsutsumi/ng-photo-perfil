@@ -2,15 +2,15 @@ import { CommonModule } from '@angular/common';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 
-import { AboutComponent } from './about.component';
+import { HomeComponent } from './home.component';
 
 @NgModule({
-  declarations: [AboutComponent],
+  declarations: [HomeComponent],
   imports: [
     CommonModule,
     MatDividerModule
   ],
-  exports: [AboutComponent],
+  exports: [HomeComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 })
-export class AboutModule { }
+export class HomeModule { }

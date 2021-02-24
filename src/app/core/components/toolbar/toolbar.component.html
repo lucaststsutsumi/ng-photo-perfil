@@ -1,22 +1,22 @@
 <mat-toolbar color="primary" class="nav-toolbar-container">
- <!--  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button> -->
-  <span>ANMZ</span>
+
+  <a [routerLink]="['/home']">
+    ANMZ
+  </a>
+
   <span class="example-spacer"></span>
 
   <ul role="navigation" class="nav-toolbar-items-list">
     <li>
+      <a [routerLink]="['/home']" class="active"> Home</a>
+    </li>
+    <li>
       <a [routerLink]="['/setup-game']" class="active">
         Setup Game
-<!--         <mat-icon>favorite</mat-icon>
- -->      </a>
+      </a>
     </li>
     <li>
-      <a [routerLink]="['/about']"> About</a>
-    </li>
-    <li>
-      <a [routerLink]="['/play-game']"> Play</a>
+      <a [routerLink]="['/play-game']" class="active"> Play</a>
     </li>
   </ul>
 
